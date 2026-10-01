@@ -22,6 +22,19 @@
     .ai-message:before{content:"";position:absolute;z-index:-1;left:0;top:18px;bottom:18px;width:3px;border-radius:0 4px 4px 0;background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 0 22px rgba(245,185,66,.55)}
     .ai-message p{max-width:1000px;margin:0;color:var(--text);font:600 clamp(18px,2.2vw,25px)/1.55 'Space Grotesk',sans-serif;letter-spacing:-.02em;overflow-wrap:anywhere}
     @media(max-width:560px){.ai-message{margin-bottom:24px;padding:22px 20px 22px 25px;border-radius:18px}.ai-message:before{top:14px;bottom:14px}.ai-message p{font-size:18px;line-height:1.6}}
+    /* Existing marketing hooks: uppercase on screen without rewriting the copy. */
+    .hero h1,
+    .dash.one .big-number,
+    .dash.one h4:not(:first-child),
+    .band strong,
+    .ai-message p,
+    #results .quote blockquote {
+      text-transform: uppercase;
+    }
+    .ai-message p,
+    #results .quote blockquote {
+      letter-spacing: 0;
+    }
   </style>
 </head>
 <body>
